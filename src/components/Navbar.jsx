@@ -5,7 +5,7 @@ import calenderDarkMode from "../assets/icons/calendar-for-darkmode-svg.svg";
 import notificationIcon from "../assets/icons/notification-icon.svg";
 import notificationdark from "../assets/icons/notificaton-icon-dark.svg";
 import dropdownIcon from "../assets/icons/Arrow-Down-icon.svg";
-import dropdownDark from "../assets/icons/Arrow-Down-icon-dark.svg";
+import dropdownDark from "../assets/icons/Arrow-down-icon-dark.svg";
 import profileImg from "../assets/img/nav-profile-img.svg";
 
 function Navbar({ darkMode }) {
