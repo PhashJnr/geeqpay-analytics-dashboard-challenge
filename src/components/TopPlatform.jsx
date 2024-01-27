@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { motion } from "framer-motion";
+
 function TopPlatform({ darkMode }) {
   return (
     <div
@@ -67,7 +69,17 @@ function Platform({
   customProgressStyle,
 }) {
   return (
-    <div className={`${darkMode ? "text-[#fafafa]" : ""}`}>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.3,
+        delay: 0.3,
+        type: "tween",
+        ease: "easeInOut",
+      }}
+      className={`${darkMode ? "text-[#fafafa]" : ""}`}
+    >
       <p
         className={` ${
           darkMode ? "text-[#f5f5f5]" : ""
@@ -94,7 +106,7 @@ function Platform({
         <p className="">{amount}</p>
         <p className="">{percentage}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

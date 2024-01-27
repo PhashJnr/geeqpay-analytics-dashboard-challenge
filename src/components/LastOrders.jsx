@@ -27,7 +27,7 @@ function LastOrders({ darkMode }) {
           darkMode ? "dark border-[#edf2f675] " : "border-[#edf2f7] "
         } p-5 bg-[#fff] rounded-[14px]  border self-start    `}
       >
-        <div className=" overflow-x-scroll lg:overflow-x-hidden ">
+        <div className=" overflow-x-scroll  lg:overflow-x-hidden ">
           <div className="flex justify-between mb-4 ">
             <p
               className={`text-[#26282C] font-JakartaSmBd ${

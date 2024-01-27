@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+import { motion } from "framer-motion";
 import refundicon from "../assets/icons/refund-icon.svg";
 import totalincome from "../assets/icons/total-income-icon.svg";
 import averagesaleicon from "../assets/icons/average-sale-icon.svg";
@@ -80,34 +81,84 @@ function Graph({
   trendicon,
 }) {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.3,
+        delay: 0.3,
+        type: "spring",
+        ease: "easeInOut",
+        bounce: 0.3,
+      }}
       className={`${
         darkMode ? "dark border-[#edf2f675] " : ""
       } border max-w-[340px] bg-[#fff] border-[#e5eaef] rounded-[14px] p-4 `}
     >
       <div className="flex justify-between mb-[7px] ">
         <img src={titleImg} alt={titleImgAlt} />{" "}
-        <img className=" cursor-pointer " src={graphImg} alt={graphImgAlt} />{" "}
+        <motion.img
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+            delay: 0.3,
+            type: "spring",
+            ease: "easeInOut",
+            bounce: 0.3,
+          }}
+          className=" cursor-pointer "
+          src={graphImg}
+          alt={graphImgAlt}
+        />{" "}
       </div>
-      <p
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+          delay: 0.3,
+          type: "tween",
+          ease: "easeInOut",
+        }}
         className={`${
           darkMode ? "text-[#f5f5f5]" : ""
         } text-[#898989] mb-[7px] text-[18px] font-JakartaMd `}
       >
         {title}
-      </p>
-      <p
+      </motion.p>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.4,
+          delay: 0.4,
+          type: "spring",
+          ease: "easeInOut",
+        }}
         className={`${
           darkMode ? "text-[#f5f5f5]" : ""
         }text-[#3a3f51] text-[24px] font-JakartaSmBd `}
       >
         {figure}
-      </p>
+      </motion.p>
       <div className="flex justify-between mt-[7px] ">
         <div
           className={`${percentageClass} rounded-[50px] py-1 px-[8px] flex gap-[5px] items-center `}
         >
-          <img className="" src={trendicon} alt="trend icon" />
+          <motion.img
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.5,
+              delay: 0.5,
+              type: "spring",
+              ease: "easeInOut",
+            }}
+            className=""
+            src={trendicon}
+            alt="trend icon"
+          />
           <p className="text-[12px]">{percentage}</p>
         </div>
         <p
@@ -118,7 +169,7 @@ function Graph({
           {timeframe}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
