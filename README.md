@@ -1,8 +1,10 @@
-# React + Vite
+GeeqPay Dashboard challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a dashboard challenge organised by Geeppay.
 
-Currently, two official plugins are available:
+Below are the tech used in the build process of this dashboard page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. React.js - for structure and functionality of the page
+2. Tailwind CSS/Vanilla CSS - for styling
+3. Chart.js - for making the chart on the dashboard
+4. Framer Motion - for page animation

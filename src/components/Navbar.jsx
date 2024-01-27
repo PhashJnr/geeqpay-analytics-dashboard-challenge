@@ -71,7 +71,11 @@ function Navbar({ darkMode }) {
                 notification ? "visible" : "hidden"
               } bg-[#fff] absolute border top-[80px] shadow-sm rounded-[14px] max-w-[350px] p-3 left-[] translate-x-[-70px] `}
             >
-              <div className="flex justify-between gap-[50px] ">
+              <div
+                className={` ${
+                  darkMode ? "dark" : ""
+                } flex justify-between gap-[50px] `}
+              >
                 <p className={``}>Alerts</p>
                 <div className="flex gap-[5px] ">
                   <img src={filterIcon} alt="filter notification icon" />
@@ -81,7 +85,11 @@ function Navbar({ darkMode }) {
                   />
                 </div>
               </div>
-              <p className="px-[6px] py-[10px] mt-[15px] bg-[#fafafa] rounded-[6px] ">
+              <p
+                className={`${
+                  darkMode ? "dark" : ""
+                } px-[6px] py-[10px] mt-[15px] bg-[#fafafa] rounded-[6px] `}
+              >
                 New alerts will show up here
               </p>
             </div>
@@ -122,7 +130,11 @@ function Navbar({ darkMode }) {
                   showProfile ? "visible" : "hidden"
                 } profileDropDown bg-[#fff] absolute border top-[80px] shadow-sm rounded-[14px] max-w-[200px] w-full p-3 right-[40px]  `}
               >
-                <ul className="flex flex-col text-[#26282c]  justify-between gap-[5px] ">
+                <ul
+                  className={` ${
+                    darkMode ? "dark" : ""
+                  } flex flex-col text-[#26282c]  justify-between gap-[5px] `}
+                >
                   <li
                     className={` ${
                       darkMode
