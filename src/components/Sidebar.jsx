@@ -41,9 +41,7 @@ function Sidebar({ darkMode, setDarkMode }) {
           <div className="sideBarLink mt-[35px] flex flex-col gap-[20px] justify-center ">
             <div
               className={`flex ${!sidebar ? "justify-center  " : ""} ${
-                darkMode
-                  ? "border-[#fff] hover:text-[#1a202c] hover:bg-[#fafafa] "
-                  : ""
+                darkMode ? "border-[#fff] " : ""
               } items-center gap-[8px] border-r-[3px] py-[5px] px-[4px] rounded-[6px]  cursor-pointer border-[#0d062d] hover:bg-[#0d062d]  hover:text-[#fafafa]  `}
             >
               <img src={categoryIcon} alt="category icon" />

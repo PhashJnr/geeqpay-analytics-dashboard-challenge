@@ -23,7 +23,7 @@ function Navbar({ darkMode }) {
     >
       <div className="flex gap-[20px] justify-between items-center ">
         <div>
-          <h2 className="font-JakartaSmBd text-[20px]  ">Dashboard</h2>
+          <h2 className="font-JakartaSmBd text-[20px]">Dashboard</h2>
         </div>
 
         <div className="flex gap-[25px] mr-[20px] ">
